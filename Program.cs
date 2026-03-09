@@ -7,11 +7,21 @@ namespace Gerador
 		static void Main()
 		{
 			Console.Clear();
+
 			string caracteres = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%&*";
 			Random random = new Random();
 
 			Console.WriteLine("Qual tamanho de senha você quer?");
-			int senha = int.Parse(Console.ReadLine());
+			int tamanho = int.Parse(Console.ReadLine());
+
+			string senha = "";
+
+			for(var i = 0; i < tamanho; i++)
+			{
+				var indice = random.Next(caracteres.Length);
+				senha += caracteres[indice];
+			}
+
 		}
 	}
 }

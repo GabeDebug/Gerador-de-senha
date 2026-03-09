@@ -21,7 +21,7 @@ namespace Gerador
 				var indice = random.Next(caracteres.Length);
 				senha += caracteres[indice];
 			}
-
+			Console.WriteLine("Senha gerada: " + senha);
 		}
 	}
 }

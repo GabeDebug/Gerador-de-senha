@@ -10,7 +10,8 @@ namespace Gerador
 			string caracteres = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%&*";
 			Random random = new Random();
 
-
+			Console.WriteLine("Qual tamanho de senha você quer?");
+			int senha = int.Parse(Console.ReadLine());
 		}
 	}
 }

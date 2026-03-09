@@ -1,2 +1,16 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+
+namespace Gerador
+{
+	class Program
+	{
+		static void Main()
+		{
+			Console.Clear();
+			string caracteres = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%&*";
+			Random random = new Random();
+
+
+		}
+	}
+}
